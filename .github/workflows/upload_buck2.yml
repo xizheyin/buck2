@@ -3,7 +3,7 @@ name: Build, upload, and tag `buck2`
 on:
   push:
     branches:
-      - main
+      - test-release
 
 jobs:
   set_version_info:
