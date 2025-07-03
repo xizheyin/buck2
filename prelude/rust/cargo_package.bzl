@@ -29,6 +29,7 @@ DEFAULT_PLATFORM_TEMPLATES = select({
     "config//os:none": select({
         "DEFAULT": None,
         "config//cpu:wasm32": "wasm32",
+    }),
     "config//os:wasi": select({
         "DEFAULT": None,
         "config//cpu:wasm32": "wasi",
